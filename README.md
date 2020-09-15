@@ -1,6 +1,8 @@
 # Beautify your Windows Terminal and Powershell
 Step-by-step tutorial to customize the Windows Terminal and Powershell Core
 
+![Windows Terminal Final Result](./img/result.jpg)
+
 # Getting Started
 ## Installing Windows Terminal
 ```
@@ -155,9 +157,27 @@ My Custom `setting.json`:
 
 > Obs: Don't forget to change `"backgroundImage"` on defaults Profile and `"startingDirectory"` on Powershell Core Profile
 
+## Adding Thunder emoji ⚡ on my prompt
+Navigate to your PSmodules directory, then into oh-my-posh themes directory:
+```
+Documents\WindowsPowerShell\Modules\oh-my-posh\2.0.412\Themes
+```
+> Obs: Sometimes will be in your `Documents` folder inside your `User` Folder or `OneDrive` Folder
+
+Open the `paradox.psm1` and update the following line:
+```
+$sl.PromptSymbols.StartSymbol = [char]::ConvertFromUtf32(0x26A1) + ' '
+```
+
+# Final Result
+![Windows Terminal Final Result](./img/result.jpg)
+
+
 # Useful Resources
 [Windows Terminal Profile Settings Documentation](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-settings)
 
 [Windows Terminal Color Schemes](https://windowsterminalthemes.dev/)
 
 [DEV TO - Beautify your Windows Terminal](https://dev.to/anupa/beautify-your-windows-terminal-1la8)
+
+[oh-my-posh repository](https://github.com/JanDeDobbeleer/oh-my-posh)
