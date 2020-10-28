@@ -34,7 +34,8 @@ Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -Skip
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 ```
-> obs: You must have installed [`Git for Windows`](https://git-scm.com/downloads).
+> Obs: You must have installed [`Git for Windows`](https://git-scm.com/downloads).
+> Install [`Cascadia code PL`](https://github.com/microsoft/cascadia-code/releases) font. (Otherwise you might some gibberish on your terminal )
 
 ## Customize your Powershell Profile
 You can open your Powershell Profile with the command below:
@@ -163,6 +164,7 @@ Navigate to your PSmodules directory, then into oh-my-posh themes directory:
 Documents\WindowsPowerShell\Modules\oh-my-posh\2.0.412\Themes
 ```
 > Obs: Sometimes will be in your `Documents` folder inside your `User` Folder or `OneDrive` Folder
+> Some versions the `WindowsPowerShell` folder would be just `PowerShell`
 
 Open the `paradox.psm1` and update the following line:
 ```
