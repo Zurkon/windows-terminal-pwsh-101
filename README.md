@@ -6,7 +6,7 @@ Step-by-step tutorial to customize the Windows Terminal and Powershell Core
 # Getting Started
 ## Installing Windows Terminal
 ```
-Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.2.2381.0/Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle -OutFile WindowsTerminal.appx -UseBasicParsing
+Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.5.10411.0/Microsoft.WindowsTerminal_1.5.10411.0_8wekyb3d8bbwe.msixbundle -OutFile WindowsTerminal.appx -UseBasicParsing
 ```
 
 ```
